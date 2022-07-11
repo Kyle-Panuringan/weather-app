@@ -7,4 +7,31 @@
 	left: 50rem;
 	right: 0;
 	bottom: 0;
+	padding: 17px 27px;
+}
+.weather-info-header {
+	font-size: 2.7rem;
+	text-align: center;
+	margin: 10px 0 37px;
+}
+.weather-info-main {
+	margin: 0 37px;
+}
+.weather-info-main > * {
+	font-size: 1.4rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 7px 0;
+	margin: 17px 0;
+}
+.hr-short {
+	margin: 0 auto;
+	width: 90%;
+}
+.weather-description {
+	font-size: 1.4rem;
+	font-weight: bolder;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 10px;
 }

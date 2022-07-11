@@ -1,7 +1,7 @@
 ::-webkit-input-placeholder {
 	color: rgb(190, 190, 190);
 	font-style: italic;
-	/* text-align: center; */
+	text-align: center;
 }
 :-moz-placeholder {
 	color: rgb(190, 190, 190);
@@ -19,12 +19,9 @@
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 	width: 22.7rem;
 	padding: 7px;
-	border-radius: 20px;
-	margin: 0 auto;
-	box-shadow: 0px 7px 15px rgb(49, 49, 49);
+	margin: 7px auto;
 }
 .btn-search {
 	color: white;

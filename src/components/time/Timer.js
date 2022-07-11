@@ -37,7 +37,7 @@ const Timer = () => {
 			const weekday = weekdays[date.getDay()];
 			const time = date.toLocaleTimeString();
 			setClock(time);
-			setToday(`${weekday}, ${month},${currentdate},${year}`);
+			setToday(`${weekday}, ${month} ${currentdate}, ${year}`);
 		}, 1000);
 		return () => {
 			clearInterval(interval);
@@ -46,7 +46,7 @@ const Timer = () => {
 
 	return (
 		<div className="timer-container">
-			<h2>{today}</h2>
+			<h3>{today}</h3>
 			<h3>{clock}</h3>
 		</div>
 	);

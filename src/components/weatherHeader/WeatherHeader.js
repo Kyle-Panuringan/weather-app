@@ -10,7 +10,7 @@ const WeatherHeader = ({ weatherData, toCelcius, temperatureSwitch }) => {
 					src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
 					alt={weatherData.weather[0].main}
 				/>
-				<div className="weather-header-body-container">
+				<div className="weather-header-main-container">
 					<h2>
 						{toCelcius
 							? Math.round(((weatherData.main.temp - 32) * 5) / 9)

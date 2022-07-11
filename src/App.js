@@ -64,7 +64,7 @@ function App() {
 				toCelcius={toCelcius}
 				temperatureSwitch={temperatureSwitch}
 			/>
-			<WeatherInfo />
+			<WeatherInfo weatherData={weatherData} />
 		</div>
 	);
 }
