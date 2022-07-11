@@ -1,0 +1,47 @@
+::-webkit-input-placeholder {
+	color: rgb(190, 190, 190);
+	font-style: italic;
+	/* text-align: center; */
+}
+:-moz-placeholder {
+	color: rgb(190, 190, 190);
+	font-style: italic;
+}
+::-moz-placeholder {
+	color: rgb(190, 190, 190);
+	font-style: italic;
+}
+:-ms-input-placeholder {
+	color: rgb(190, 190, 190);
+	font-style: italic;
+}
+.search-bar-container {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+	width: 22.7rem;
+	padding: 7px;
+	border-radius: 20px;
+	margin: 0 auto;
+	box-shadow: 0px 7px 15px rgb(49, 49, 49);
+}
+.btn-search {
+	color: white;
+	font-size: 1.4rem;
+	font-weight: bolder;
+	border: none;
+	background: none;
+	line-height: 10px;
+}
+.btn-clear {
+	visibility: hidden;
+}
+#searchCity {
+	color: white;
+	font-size: 1.5rem;
+	outline: none;
+	border: none;
+	background: none;
+	padding: 0 4px;
+}

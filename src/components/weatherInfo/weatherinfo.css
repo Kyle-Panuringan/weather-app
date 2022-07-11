@@ -1,0 +1,10 @@
+.weather-info-container {
+	position: fixed;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	backdrop-filter: blur(10px);
+	box-shadow: 0px 0px 15px black;
+	top: 0;
+	left: 50rem;
+	right: 0;
+	bottom: 0;
+}
