@@ -1,21 +1,80 @@
-.weather-info-container {
+/* Head */
+.weather-header-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 10px;
+	padding: 0 17px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 15px black;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	backdrop-filter: blur(10px);
+}
+.weather-header-container h1 {
+	padding: 0 17px;
+}
+.weather-header-body-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.weather-header-main-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.weather-header-body-container h1 {
+	padding: 0 10px;
+}
+.weather-header-body-container h2 {
+	font-size: 4rem;
+}
+.temperature-button {
+	color: rgb(147, 147, 147);
+	background: none;
+	border: none;
+	font-size: 2rem;
+	padding: 0 7px;
+	cursor: pointer;
+}
+.celcius {
+	color: white;
+	font-weight: bolder;
+	border-right: 1px solid rgb(250, 250, 250);
+}
+.farenheit {
+	color: white;
+	font-weight: bolder;
+	border-left: 1px solid rgb(250, 250, 250);
+}
+sup {
+	font-size: 1.7rem;
+}
+/* Main */
+.weather-info-bg {
 	position: fixed;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 	backdrop-filter: blur(10px);
 	box-shadow: 0px 0px 15px black;
-	top: 0;
-	left: 50rem;
-	right: 0;
-	bottom: 0;
-	padding: 17px 27px;
+	width: 100vw;
+	height: 100vh;
+	margin-left: 60%;
+	width: 40%;
+	z-index: -1;
 }
-.weather-info-header {
-	font-size: 2.7rem;
-	text-align: center;
-	margin: 10px 0 37px;
+.weather-info-container {
+	padding: 17px 27px;
+	width: 100vw;
+	height: 100vh;
+	margin-left: 60%;
+	width: 40%;
 }
 .weather-info-main {
-	margin: 0 37px;
+	margin: 27px 37px;
+	padding: 0 17px;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	border: 2px solid white;
+	border-radius: 10px;
 }
 .weather-info-main > * {
 	font-size: 1.4rem;
@@ -24,14 +83,21 @@
 	padding: 7px 0;
 	margin: 17px 0;
 }
-.hr-short {
-	margin: 0 auto;
-	width: 90%;
-}
 .weather-description {
 	font-size: 1.4rem;
 	font-weight: bolder;
 	text-align: center;
 	text-transform: capitalize;
 	padding: 10px;
+}
+.temp-head {
+	font-size: 2.7rem;
+	text-align: center;
+	margin: 10px 0 37px;
+}
+#error-message {
+	font-size: 2.7rem;
+	text-align: center;
+	text-transform: capitalize;
+	padding: 17px;
 }
