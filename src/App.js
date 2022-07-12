@@ -18,7 +18,7 @@ function App() {
 
 	const url = `https://api.openweathermap.org/data/2.5/weather?q=${
 		city ? city : "manila"
-	}&units=imperial&appid=895284fb2d2c50a520ea537456963d9c`;
+	}&units=imperial&appid=b21767305eed49ae65ced8e0026fe6bb`;
 
 	const getWeather = async () => {
 		try {
@@ -81,15 +81,17 @@ function App() {
 		<div className="app">
 			<div className="background" style={test}></div>
 			{loading && <h1>Loading...</h1>}
-			<WeatherInfo
-				loading={loading}
-				weatherData={weatherData}
-				toCelcius={toCelcius}
-				temperatureSwitch={temperatureSwitch}
-				city={city}
-				setCity={setCity}
-				handleSearch={handleSearch}
-			/>
+			{!loading && (
+				<WeatherInfo
+					loading={loading}
+					weatherData={weatherData}
+					toCelcius={toCelcius}
+					temperatureSwitch={temperatureSwitch}
+					city={city}
+					setCity={setCity}
+					handleSearch={handleSearch}
+				/>
+			)}
 		</div>
 	);
 }

@@ -46,3 +46,19 @@
 	background: none;
 	padding: 0 4px;
 }
+.search-bar-container form {
+	display: flex;
+}
+.search-bar-container form button {
+	font-size: 1.7rem;
+	line-height: 10px;
+}
+@media screen and (max-width: 777px) {
+	.search-bar-container {
+		width: 100%;
+		margin: 7px auto;
+	}
+	#searchCity {
+		width: 17rem;
+	}
+}

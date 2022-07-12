@@ -101,3 +101,42 @@ sup {
 	text-transform: capitalize;
 	padding: 17px;
 }
+@media screen and (max-width: 999px) {
+	.temp-head {
+		display: none;
+	}
+	.weather-header-container {
+		all: initial;
+		color: white;
+		text-align: center;
+	}
+	.weather-info-bg {
+		margin: 0;
+		width: 100%;
+	}
+	.weather-info-container {
+		margin: 0;
+		width: 100%;
+	}
+	.weather-info-contents {
+		margin-top: 17px;
+		/* background: red; */
+		height: 80vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.weather-info-main {
+		margin: 0;
+		padding: 0 17px;
+		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+		border: 2px solid white;
+		border-radius: 10px;
+	}
+	.weather-info-main > * {
+		font-size: 1.2rem;
+	}
+	.weather-description {
+		font-size: 1.2rem;
+	}
+}

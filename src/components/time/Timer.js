@@ -35,7 +35,10 @@ const Timer = () => {
 			const month = months[date.getMonth()];
 			const currentdate = date.getDate();
 			const weekday = weekdays[date.getDay()];
-			const time = date.toLocaleTimeString();
+			const time = date.toLocaleTimeString([], {
+				hour: "2-digit",
+				minute: "2-digit",
+			});
 			setClock(time);
 			setToday(`${weekday}, ${month} ${currentdate}, ${year}`);
 		}, 1000);
