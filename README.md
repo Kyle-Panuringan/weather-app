@@ -6,4 +6,4 @@ Weather app allow users to view the current weather around the world.
 
 Weather app project is build with React JS
 
-Live Demo: [Weahter App](https://kyle-panuringan.github.io/weather-app)
+Live Demo: [Weather App](https://kyle-panuringan.github.io/weather-app)
