@@ -17,7 +17,7 @@
 }
 .search-bar-container {
 	display: flex;
-	text-align: center;
+	align-items: center;
 	justify-content: center;
 	width: 22.7rem;
 	padding: 7px;
@@ -29,10 +29,11 @@
 	font-weight: bolder;
 	border: none;
 	background: none;
-	line-height: 10px;
+	cursor: pointer;
 }
 .btn-clear {
 	visibility: hidden;
+	cursor: pointer;
 }
 .btn-active {
 	visibility: visible;
